@@ -29,8 +29,10 @@ alias wkmp="watch kubectl -n monitoring get pods"
 alias wksp='watch kubectl -n ibm-services-system get pods'
 
 # https://github.com/nvbn/thefuck
-eval $(thefuck --alias)
-eval $(thefuck --alias oops)
+if command -v thefuck >/dev/null; then
+    eval $(thefuck --alias)
+    eval $(thefuck --alias oops)
+fi
 
 # IBM Cloud CLI
 alias iks="ibmcloud ks"
