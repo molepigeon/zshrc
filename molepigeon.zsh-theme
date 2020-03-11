@@ -11,7 +11,7 @@
 autoload -U colors; colors
 source /Users/molepigeon/gopath/src/github.com/molepigeon/zshrc/prompt-tweaks.zsh # Change this to the location of prompt-tweaks.sh in this repo!
 
-PROMPT='[%*] →$? $ZSH_KUBECTL_COLOR(☸️ $ZSH_KUBECTL_CONTEXT) %{$fg_no_bold[green]%}%3~$(git_prompt_info)%{$reset_color%} $ '
+PROMPT='[%*] →$? $ZSH_KUBECTL_PROMPT%{$fg_no_bold[green]%}%3~$(git_prompt_info)%{$reset_color%} $ '
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[white]%}("

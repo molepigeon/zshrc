@@ -4,10 +4,15 @@
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd _zsh_molepigeon_prompt_precmd
 function _zsh_molepigeon_prompt_precmd() {
-    context=$(kubectl config current-context | cut -d/ -f1)
+    if ! context=$(kubectl config current-context 2>/dev/null) ; then
+        unset ZSH_KUBECTL_PROMPT
+        return 0
+    fi
+    context=$(echo $context | cut -d/ -f1)
     ZSH_KUBECTL_CONTEXT="${context}"
     ZSH_KUBECTL_COLOR="%{$fg_no_bold[white]%}"
     [[ "$ZSH_KUBECTL_CONTEXT" =~ "-stage" ]] && ZSH_KUBECTL_COLOR="%{$fg_bold[blue]%}"
     [[ "$ZSH_KUBECTL_CONTEXT" =~ "-prod" ]] && ZSH_KUBECTL_COLOR="%{$fg_bold[red]%}"
+    ZSH_KUBECTL_PROMPT="$ZSH_KUBECTL_COLOR(☸️ $ZSH_KUBECTL_CONTEXT) "
     return 0
 }
