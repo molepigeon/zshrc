@@ -109,6 +109,6 @@ export GOGIT=$GOPATH/src/github.ibm.com
 export GO111MODULE=auto
 export GOPRIVATE=github.ibm.com
 
+source /Users/molepigeon/gopath/src/github.com/molepigeon/zshrc/secrets.zsh
 source /Users/molepigeon/gopath/src/github.com/molepigeon/zshrc/aliases.zsh
-source /Users/molepigeon/gopath/src/github.com/molepigeon/zshrc/secrets.zsh | true
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
