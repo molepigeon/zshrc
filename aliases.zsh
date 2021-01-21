@@ -6,6 +6,8 @@ alias kk="kubectl -n kube-system"
 alias kr="kubectl -n registry"
 alias km="kubectl -n monitoring"
 alias ks='kubectl -n ibm-services-system'
+alias kc='kubectl config use-context'
+alias kcu='kubectl config unset current-context'
 
 alias wk="watch kubectl"
 alias wki="watch kubectl -n istio-system"
@@ -59,3 +61,4 @@ cover () {
 }
 alias gml="gometalinter"
 alias dockertools="sh /Users/molepigeon/dockertools.sh"
+alias axctl="/Users/molepigeon/.axctl/bin/axctl-darwin-amd64"
