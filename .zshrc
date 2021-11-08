@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$PATH:${KREW_ROOT:-$HOME/.krew}/bin:/Users/molepigeon/gopath/bin:/Users/molepigeon/Library/Python/3.7/bin:/Users/molepigeon/.istioctl/bin
+export PATH=$PATH:${KREW_ROOT:-$HOME/.krew}/bin:/Users/molepigeon/gopath/bin:/Users/molepigeon/Library/Python/3.7/bin:/Users/molepigeon/.istioctl/bin:/Users/molepigeon/.axctl/bin
 export PYTHONPATH=$PYTHONPATH:/Users/molepigeon/gopath/src/github.ibm.com/alchemy-containers/common-utils/:/Users/molepigeon/gopath/src/github.ibm.com/alchemy-containers/credentialstore
 
 # Path to your oh-my-zsh installation.

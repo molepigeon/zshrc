@@ -61,4 +61,3 @@ cover () {
 }
 alias gml="gometalinter"
 alias dockertools="sh /Users/molepigeon/dockertools.sh"
-alias axctl="/Users/molepigeon/.axctl/bin/axctl-darwin-amd64"
