@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 
 fpath=(~/.zsh $fpath)
 
-ssh-add -K # Inject GHE key
+ssh-add --apple-use-keychain # Inject GHE key
 export GPG_TTY=$(tty)
 
 export GOPATH=/Users/molepigeon/gopath
