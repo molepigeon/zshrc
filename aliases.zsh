@@ -42,9 +42,9 @@ alias icr="ibmcloud cr"
 alias ic="ibmcloud"
 alias ics="ibmcloud login --sso -a test.cloud.ibm.com"
 alias icp="ibmcloud login --sso -a cloud.ibm.com"
-alias regprod="ibmcloud target -c $IBMCLOUD_REGPROD_ACCOUNT"
-alias regdev="ibmcloud target -c $IBMCLOUD_REGDEV_ACCOUNT"
-alias regstage="ibmcloud target -c $IBMCLOUD_REGSTAGE_ACCOUNT"
+alias regprod="ibmcloud login --sso -a cloud.ibm.com --no-region -c $IBMCLOUD_REGPROD_ACCOUNT"
+alias regdev="ibmcloud login --sso -a cloud.ibm.com --no-region -c $IBMCLOUD_REGDEV_ACCOUNT"
+alias regstage="ibmcloud login --sso -a cloud.ibm.com --no-region -c $IBMCLOUD_REGSTAGE_ACCOUNT"
 
 # Git related
 alias hpr="hub pull-request -d"
