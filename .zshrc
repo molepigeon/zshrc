@@ -114,7 +114,7 @@ export VA_GIT_DIR=~/gopath/src/github.ibm.com/alchemy-va
 
 source /Users/molepigeon/gopath/src/github.com/molepigeon/zshrc/secrets.zsh
 source /Users/molepigeon/gopath/src/github.com/molepigeon/zshrc/aliases.zsh
-export PATH="~/bin:~/go/src/github.ibm.com/alchemy-va/utils/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="~/bin:~/gopath/src/github.ibm.com/alchemy-va/utils/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Access clusters with armada-cluster command
 #source _armada_cluster_source
