@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$PATH:${KREW_ROOT:-$HOME/.krew}/bin:/Users/molepigeon/gopath/bin:/Users/molepigeon/Library/Python/3.7/bin:/Users/molepigeon/.istioctl/bin:/Users/molepigeon/.axctl/bin
+export PATH=$PATH:${KREW_ROOT:-$HOME/.krew}/bin:/Users/molepigeon/gopath/bin:/Users/molepigeon/Library/Python/3.7/bin:/Users/molepigeon/.istioctl/bin:/Users/molepigeon/.axctl/bin:/Users/molepigeon/scripts
 export PYTHONPATH=$PYTHONPATH:/Users/molepigeon/gopath/src/github.ibm.com/alchemy-containers/common-utils/:/Users/molepigeon/gopath/src/github.ibm.com/alchemy-containers/credentialstore
 
 # Path to your oh-my-zsh installation.
@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 
 fpath=(~/.zsh $fpath)
 
-ssh-add --apple-use-keychain # Inject GHE key
+#ssh-add --apple-use-keychain # Inject GHE key
 export GPG_TTY=$(tty)
 
 export GOPATH=/Users/molepigeon/gopath
@@ -109,6 +109,12 @@ export GOGIT=$GOPATH/src/github.ibm.com
 export GO111MODULE=auto
 export GOPRIVATE=github.ibm.com
 
+# Important for running certain scripts used in VA
+export VA_GIT_DIR=~/gopath/src/github.ibm.com/alchemy-va
+
 source /Users/molepigeon/gopath/src/github.com/molepigeon/zshrc/secrets.zsh
 source /Users/molepigeon/gopath/src/github.com/molepigeon/zshrc/aliases.zsh
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="~/bin:~/go/src/github.ibm.com/alchemy-va/utils/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+# Access clusters with armada-cluster command
+#source _armada_cluster_source

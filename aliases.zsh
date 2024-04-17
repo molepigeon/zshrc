@@ -61,3 +61,4 @@ cover () {
 }
 alias gml="gometalinter"
 alias dockertools="sh /Users/molepigeon/dockertools.sh"
+alias oplogin='export OP_SESSION_ibm=$(op signin --account ibm --raw)'
